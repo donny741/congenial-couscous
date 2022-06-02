@@ -1,0 +1,6 @@
+<?xml version='1.0'?>
+<checkstyle>
+  <file name='packages/login/create_user.rb'>
+    <error line='3' severity='warning' message='Dependency violation: ::User belongs to &apos;packages/core&apos;, but &apos;packages/login&apos; does not specify a dependency on  &apos;packages/core&apos;.' source='com.puppycrawl.tools.checkstyle.pronto'/>
+  </file>
+</checkstyle>

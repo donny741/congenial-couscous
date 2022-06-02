@@ -1,0 +1,12 @@
+name: Run check
+on:
+  pull_request:
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - uses: jwgmeligmeyling/checkstyle-github-action@master
+        with:
+          path: './checkstyle-result.xml'
